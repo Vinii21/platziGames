@@ -1,0 +1,49 @@
+.estadistica--perfil {
+    display: flex;
+    width: 50%;
+    height: 90px;
+    padding-top: 15px;
+    margin: 0 auto;
+    justify-content: space-around;
+    @include caja;
+
+    h3 {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        @include titulos($Fuente2);
+    }
+    span {
+        font-size: 12px;
+        text-align: center;
+        @include titulos($Fuente2);
+    }
+}
+
+.caja--con-fondo__stats {
+    margin: 0 auto;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    border-top: none;
+    text-align: center;
+    ul {
+        display: flex;
+    }
+    li {
+        display: flex;
+        margin-right: 50px;
+        opacity: .8;
+    }
+    i {
+        color: $color-claro;
+    }
+    span {
+        color: $color-claro;
+    }
+    @include media(desktop-s){
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+    }
+}
