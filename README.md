@@ -1,2 +1,2 @@
 # platziGames
-Página para probar los preprocesadores, LESS, SASS, STYLUS para CSS y PUG para HTML.
+Página para comprobar habilidades de los preprocesadores SASS para CSS y PUG para HTML.
