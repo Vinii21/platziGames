@@ -1108,6 +1108,17 @@ main {
   font-size: 40px;
   color: #111111;
 }
+.header--principal .logo.logo--header {
+  position: relative;
+  left: -20px;
+}
+.header--principal .contenedor--iconMenu {
+  width: 60px;
+  height: 60px;
+}
+.header--principal .contenedor--iconMenu img {
+  width: 100%;
+}
 @media only screen and (min-width: 992px) {
   .header--principal {
     -webkit-box-pack: justify;
@@ -1118,6 +1129,13 @@ main {
             align-items: flex-start;
   }
   .header--principal .menu {
+    display: none;
+  }
+  .header--principal .logo.logo--header {
+    position: relative;
+    left: 0px;
+  }
+  .header--principal .contenedor--iconMenu {
     display: none;
   }
 }
@@ -1142,21 +1160,6 @@ main {
     display: -ms-flexbox;
     display: flex;
   }
-}
-.nav--header ul .contenedor--iconMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 60px;
-  height: 100%;
-  background-color: #111111;
-}
-.nav--header ul .contenedor--iconMenu i {
-  font-size: 20px;
-  color: #8841DA;
 }
 
 .header__busqueda {

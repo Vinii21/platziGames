@@ -11,11 +11,29 @@
         font-size: 40px;
         color: $color-primario;
     }
+    .logo.logo--header{
+       position: relative;
+       left: -20px; 
+    }
+    .contenedor--iconMenu{
+        width: 60px;
+        height: 60px;
+        img{
+            width: 100%;
+        }
+    }
 
     @include media(desktop-s){
         justify-content: space-between;
         align-items: flex-start;
         .menu {
+            display: none;
+        }
+        .logo.logo--header{
+            position: relative;
+            left: 0px; 
+         }
+        .contenedor--iconMenu{
             display: none;
         }
     }
@@ -34,17 +52,6 @@
     }
     @include media(desktop-s){
         display: flex;
-    }
-    .contenedor--iconMenu {
-        display: flex;
-        justify-content: center;
-        max-width: 60px;
-        height: 100%;
-        background-color: $color-primario;
-        i {
-            font-size: 20px;
-            color: $color-secundario; 
-        }
     }
 }
 
